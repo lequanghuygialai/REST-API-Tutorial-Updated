@@ -14,14 +14,26 @@ const zod_1 = require("zod");
  *        - price
  *        - image
  *       properties:
- *         title:
- *           type: string
- *         description:
- *           type: string
- *         price:
- *           type: number
- *         image:
- *           type: string
+ *        user:
+ *          type: string
+ *        title:
+ *          type: string
+ *        description:
+ *          type: string
+ *        price:
+ *          type: number
+ *        image:
+ *          type: string
+ *        _id:
+ *          type: string
+ *        productId:
+ *          type: string
+ *        createdAt:
+ *          type: string
+ *        updatedAt:
+ *          type: string
+ *        __v:
+ *          type: number
  */
 const payload = {
     body: (0, zod_1.object)({
@@ -50,3 +62,45 @@ exports.createProductSchema = (0, zod_1.object)(Object.assign({}, payload));
 exports.updateProductSchema = (0, zod_1.object)(Object.assign(Object.assign({}, payload), params));
 exports.deleteProductSchema = (0, zod_1.object)(Object.assign({}, params));
 exports.getProductSchema = (0, zod_1.object)(Object.assign({}, params));
+/**
+ * @openapi
+ * components:
+ *   schema:
+ *     CreateProductInput:
+ *       type: object
+ *       required:
+ *        - title
+ *        - description
+ *        - price
+ *        - image
+ *       properties:
+ *        title:
+ *          type: string
+ *        description:
+ *          type: string
+ *        price:
+ *          type: number
+ *        image:
+ *          type: string
+ */
+/**
+ * @openapi
+ * components:
+ *   schema:
+ *     UpdateProductInput:
+ *       type: object
+ *       required:
+ *        - title
+ *        - description
+ *        - price
+ *        - image
+ *       properties:
+ *        title:
+ *          type: string
+ *        description:
+ *          type: string
+ *        price:
+ *          type: number
+ *        image:
+ *          type: string
+ */

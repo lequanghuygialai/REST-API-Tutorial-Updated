@@ -15,7 +15,7 @@ const options = {
             version: package_json_1.version,
         },
         components: {
-            securitySchemas: {
+            securitySchemes: {
                 bearerAuth: {
                     type: "http",
                     scheme: "bearer",
