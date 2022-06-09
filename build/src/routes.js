@@ -3,14 +3,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var product_controller_1 = require("./controller/product.controller");
-var session_controller_1 = require("./controller/session.controller");
-var user_controller_1 = require("./controller/user.controller");
-var requireUser_1 = __importDefault(require("./middleware/requireUser"));
-var validateResource_1 = __importDefault(require("./middleware/validateResource"));
-var product_schema_1 = require("./schema/product.schema");
-var session_schema_1 = require("./schema/session.schema");
-var user_schema_1 = require("./schema/user.schema");
+const product_controller_1 = require("./controller/product.controller");
+const session_controller_1 = require("./controller/session.controller");
+const user_controller_1 = require("./controller/user.controller");
+const requireUser_1 = __importDefault(require("./middleware/requireUser"));
+const validateResource_1 = __importDefault(require("./middleware/validateResource"));
+const product_schema_1 = require("./schema/product.schema");
+const session_schema_1 = require("./schema/session.schema");
+const user_schema_1 = require("./schema/user.schema");
 function routes(app) {
     /**
      * @openapi
@@ -23,7 +23,7 @@ function routes(app) {
      *       200:
      *         description: App is up and running
      */
-    app.get("/healthcheck", function (req, res) { return res.sendStatus(200); });
+    app.get("/healthcheck", (req, res) => res.sendStatus(200));
     /**
      * @openapi
      * '/api/users':

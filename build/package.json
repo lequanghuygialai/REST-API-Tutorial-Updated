@@ -9,6 +9,9 @@
         "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
         "build": "npx tsc"
     },
+    "engines": {
+        "node": "17.8.0"
+    },
     "dependencies": {
         "bcrypt": "^5.0.1",
         "config": "^3.3.6",
@@ -42,6 +45,7 @@
         "@types/response-time": "^2.3.5",
         "@types/swagger-jsdoc": "^6.0.1",
         "@types/swagger-ui-express": "^4.1.3",
+        "ts-node": "^10.8.1",
         "ts-node-dev": "^1.1.8",
         "typescript": "^4.4.4"
     }
