@@ -3,7 +3,7 @@ export default {
   dbUri:
     "mongodb+srv://admin:admin@cluster0.wmrhs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
   saltWorkFactor: 10,
-  accessTokenTtl: "15m",
+  accessTokenTtl: "120m",
   refreshTokenTtl: "1y",
   accessTokenPrivateKey: `-----BEGIN RSA PRIVATE KEY-----
   MIIBOgIBAAJBAMUryMe1oV06diqrm2IRdqMXoZjk4IbvwOcYeRA7/7eDfvTbOlkd
